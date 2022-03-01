@@ -27,14 +27,16 @@ func CalcSquare(sideLen float64, sidesNum myType) float64 {
 		p := float64(sideLen) * float64(SidesSquare) / 2
 		S := math.Sqrt(p * (p - sideLen) * (p - sideLen) * (p - sideLen))
 		fmt.Println(S)
+		return S
 	} else if sidesNum == SidesTriangle {
 		fmt.Println(math.Pow(sideLen, 2))
+		return (math.Pow(sideLen, 2))
 	} else if sidesNum == SidesCircle {
 		r := sideLen / (2 * math.Pi)
 		s := math.Pi * r * r
 		fmt.Println(s)
+		return s
 	} else {
 		return 0
 	}
-	return 0
 }
