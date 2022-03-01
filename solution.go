@@ -19,7 +19,7 @@ const SidesCircle = 0
 // CalcSquare(10.0, SidesCircle)
 
 func main() {
-	CalcSquare(13, SidesCircle)
+	CalcSquare(10.0, SidesCircle)
 }
 
 func CalcSquare(sideLen float64, sidesNum myType) float64 {
